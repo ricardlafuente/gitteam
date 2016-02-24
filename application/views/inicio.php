@@ -1,7 +1,7 @@
 
 <div class="row">
 
-    <div class="container col-md-12">
+    <div class="container col-md-10">
         <table id="tablaEmpleado" class="table table-hover">
             <tr>
                 <th>#</th>
@@ -36,7 +36,7 @@
         </table>
     </div>
 
-    <div class="container col-md-12">
+    <div class="container col-md-10">
         <table id="tablaDepartamento" class="table table-hover">
             <tr>
                 <th>#</th>

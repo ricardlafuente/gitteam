@@ -10,7 +10,7 @@
         <!-- Título de la página -->
         <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
-                <a class="navbar-brand" href="<?php echo base_url(); ?>">LightsOut</a>
+                <a class="navbar-brand" href="#">GitTeam</a>
             </div>
             <?php
             echo'<div class="collapse navbar-collapse navbar-ex1-collapse">
