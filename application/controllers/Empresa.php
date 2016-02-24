@@ -1,8 +1,8 @@
 <?php
 class Empresa extends CI_Controller {
 
-    function __construct() {
-        
+    function index(){
+        $this->load->view('inicio');
     }
 
 }
