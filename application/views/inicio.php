@@ -11,7 +11,6 @@
                     <div class="col-xs-6">
                         <div class="btn-group">
                             <a class="btn btn-default"><span>Nuevo</span></a>
-                            <a class="btn btn-default"><span>Editar</span></a>
                             <a class="btn btn-default"><span>Eliminar</span></a>
                         </div>
                     </div>
@@ -107,7 +106,6 @@
                     <div class="col-xs-6">
                         <div class="btn-group">
                             <a class="btn btn-default"><span>Nuevo</span></a>
-                            <a class="btn btn-default"><span>Editar</span></a>
                             <a class="btn btn-default"><span>Eliminar</span></a>
                         </div>
                     </div>
@@ -119,7 +117,7 @@
                 <div class="panel-body" style="padding:0px">
                     <table class="table table-striped table-bordered" style="margin:0px">
                         <thead>
-                            <tr>
+                            <tr >
                                 <th>Número</th>
                                 <th>Nombre</th>
                                 <th style="width:100px">Acciones</th>
