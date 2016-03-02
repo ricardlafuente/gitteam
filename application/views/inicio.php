@@ -48,12 +48,11 @@
                                 echo '<td>' . $empleado["salary"] . '</td>';
                                 echo '<td>' . $empleado["title"] . '</td>';
                                 echo '<td>' . $empleado["dept_name"] . '</td>';
-                                //echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
-                                echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                echo '<td><a href="' . base_url() . '/Empresa/deleteEmpleado/' . $empleado["emp_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
                                                             <span class="glyphicon glyphicon-trash"></span>
-                                                        </button></a></td>';
+                                                        </button></a>';
 
-                                echo '<td><a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '"><button type="button" class="btn btn-xs btn-default">
+                                echo '<a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '"><button type="button" class="btn btn-xs btn-default">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 </button></a></td>';
                                 echo '</tr>';
@@ -107,8 +106,13 @@
                                 echo '<tr>';
                                 echo '<td>' . $departamento["dept_no"] . '</td>';
                                 echo '<td>' . $departamento["dept_name"] . '</td>';
-                                echo '<td><a href="' . base_url() . '/Empresa/eliminarDepartamento/' . $departamento["dept_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
-
+                                 echo '<td><a href="' . base_url() . 'Empresa/deleteDepartament/' . $departamento["dept_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button></a>';
+                                 echo '<a href="' . base_url() . 'Empresa/modificarDeparament/' . $departamento["dept_no"] . '"><button type="button" class="btn btn-xs btn-default">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                </button></a></td>';
+                                echo '</tr>';
                                 echo '</tr>';
                             }
                             ?>
@@ -158,9 +162,9 @@
                 <label>Fecha de nacimiento</label>
                 <input id="fecha" type="text" name="birth_date" class="form-control">
                 <label>Departamento</label>
-                <input type="text" name="dept_no" class="form-control">
+                <input type="number" name="dept_no" class="form-control">
                 <label>Salario</label>
-                <input type="text" name="salary" class="form-control">
+                <input type="number" name="salary" class="form-control">
                 <label>Título</label>
                 <input type="text" name="title" class="form-control">
                 <div class="modal-footer">

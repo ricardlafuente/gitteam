@@ -6,7 +6,7 @@ class Empresa extends CI_Controller {
         $data = array();
         $data['empleados'] = $this->Empleado->getEmpleados();
         $data['departamentos'] = $this->Departaments->getDepartaments();
-
+        //var_dump($data['empleados']);
         $this->load->view("header");
         $this->load->view("inicio", $data);
     }
@@ -45,7 +45,7 @@ class Empresa extends CI_Controller {
 
     function deleteDepartament($dept_no) {
 
-        $this->Empleado->deleteEmpleado($id_empleado);
+        $this->Departaments->deleteDepartament($dept_no);
 
         $this->index();
     }
