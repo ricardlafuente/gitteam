@@ -17,7 +17,7 @@ class Empresa extends CI_Controller {
         $first_name = $this->input->post("first_name");
         $last_name = $this->input->post("last_name");
         $gender = $this->input->post("gender");
-        $department = $this->input->post("department");
+        $department = $this->input->post("dept_no");
         $salary = $this->input->post("salary");
         $title = $this->input->post("title");
 
