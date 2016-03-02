@@ -1,6 +1,6 @@
 <?php
 
-Class Despartaments extends CI_Model {
+Class Departaments extends CI_Model {
 
     function getDepartaments() {
 

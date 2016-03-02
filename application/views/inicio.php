@@ -37,28 +37,28 @@
                         <tbody>
 
                             <?php
-//                            foreach ($empleados as $empleado) {
-//                                echo '<tr>';
-//                                echo '<td>' . $empleado["emp_no"] . '</td>';
-//                                echo '<td>' . $empleado["birth_date"] . '</td>';
-//                                echo '<td>' . $empleado["first_name"] . '</td>';
-//                                echo '<td>' . $empleado["last_name"] . '</td>';
-//                                echo '<td>' . $empleado["gender"] . '</td>';
-//                                echo '<td>' . $empleado["hire_date"] . '</td>';
-//                                echo '<td>' . $empleado["salary"] . '</td>';
-//                                echo '<td>' . $empleado["title"] . '</td>';
-//                                echo '<td>' . $empleado["dept_name"] . '</td>';
-//                                //echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
-//                                echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
-//                                                            <span class="glyphicon glyphicon-trash"></span>
-//                                                        </button></a></td>';
-//
-//                                echo '<td><a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '"><button type="button" class="btn btn-xs btn-default">
-//                                <span class="glyphicon glyphicon-pencil"></span>
-//                                </button></a></td>';
-//                                echo '</tr>';
-//                            }
-//                            
+                            foreach ($empleados as $empleado) {
+                                echo '<tr>';
+                                echo '<td>' . $empleado["emp_no"] . '</td>';
+                                echo '<td>' . $empleado["birth_date"] . '</td>';
+                                echo '<td>' . $empleado["first_name"] . '</td>';
+                                echo '<td>' . $empleado["last_name"] . '</td>';
+                                echo '<td>' . $empleado["gender"] . '</td>';
+                                echo '<td>' . $empleado["hire_date"] . '</td>';
+                                echo '<td>' . $empleado["salary"] . '</td>';
+                                echo '<td>' . $empleado["title"] . '</td>';
+                                echo '<td>' . $empleado["dept_name"] . '</td>';
+                                //echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
+                                echo '<td><a href="' . base_url() . '/Empresa/eliminarEmpleado/' . $empleado["emp_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button></a></td>';
+
+                                echo '<td><a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '"><button type="button" class="btn btn-xs btn-default">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                </button></a></td>';
+                                echo '</tr>';
+                            }
+                            
                             ?>
                         </tbody> 
                     </table>
@@ -103,14 +103,14 @@
                         <tbody>
 
                             <?php
-//                            foreach ($departamentos as $departamento) {
-//                                echo '<tr>';
-//                                echo '<td>' . $empleado["dept_no"] . '</td>';
-//                                echo '<td>' . $empleado["dept_name"] . '</td>';
-//                                echo '<td><a href="' . base_url() . '/Empresa/eliminarDepartamento/' . $empleado["dept_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
-//
-//                                echo '</tr>';
-//                            }
+                            foreach ($departamentos as $departamento) {
+                                echo '<tr>';
+                                echo '<td>' . $departamento["dept_no"] . '</td>';
+                                echo '<td>' . $departamento["dept_name"] . '</td>';
+                                echo '<td><a href="' . base_url() . '/Empresa/eliminarDepartamento/' . $departamento["dept_no"] . '"><span class="glyphicon glyphicon-remove-circle"></span></a></td>';
+
+                                echo '</tr>';
+                            }
                             ?>
                         </tbody> 
                     </table>
@@ -140,7 +140,7 @@
           <h4 class="modal-title">Agregar Nuevo Empleado</h4>
         </div>
         <div class="modal-body">
-            <form method="post">
+            <form action="<?php echo base_url("/Empresa/crearEmpleado")?>" method="post">
                                 
                 <label>Número empleado</label>
                 <input type="number" name="emp_no" class="form-control">
@@ -150,10 +150,10 @@
                 <input type="text" name="last_name" class="form-control">
                 <label>Sexo</label>
                 <div class="radio">
-                    <label><input type="radio" name="gender" value="male">Hombre</label>
+                    <label><input type="radio" name="gender" value="M">Hombre</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="gender" value="female">Mujer</label>
+                    <label><input type="radio" name="gender" value="F">Mujer</label>
                 </div>
                 <label>Fecha de nacimiento</label>
                 <input id="fecha" type="text" name="birth_date" class="form-control">
@@ -163,11 +163,11 @@
                 <input type="text" name="salary" class="form-control">
                 <label>Título</label>
                 <input type="text" name="title" class="form-control">
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default">Agregar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </form>
-        </div>
-        <div class="modal-footer">
-            <a href="" class="btn btn-default">Agregar</a>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
       
@@ -190,17 +190,17 @@
           <h4 class="modal-title">Agregar Nuevo Empleado</h4>
         </div>
         <div class="modal-body">
-            <form method="post">
+            <form action="<?php echo base_url("/Empresa/createDepartament")?>" method="post">
                                 
                 <label>Número departamento</label>
                 <input type="number" name="dept_no" class="form-control">
                 <label>Nombre</label>
                 <input type="text" name="dept_name" class="form-control">
+                <div class="modal-footer">
+                   <button type="submit" class="btn btn-default">Agregar</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </form>
-        </div>
-        <div class="modal-footer">
-            <a href="" class="btn btn-default">Agregar</a>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
       
