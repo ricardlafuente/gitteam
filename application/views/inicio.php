@@ -38,21 +38,21 @@
 
                             <?php
                             foreach ($empleados as $empleado) {
-                                echo '<tr>';
-                                echo '<td>' . $empleado["emp_no"] . '</td>';
-                                echo '<td>' . $empleado["birth_date"] . '</td>';
-                                echo '<td>' . $empleado["first_name"] . '</td>';
-                                echo '<td>' . $empleado["last_name"] . '</td>';
-                                echo '<td>' . $empleado["gender"] . '</td>';
-                                echo '<td>' . $empleado["hire_date"] . '</td>';
-                                echo '<td>' . $empleado["salary"] . '</td>';
-                                echo '<td>' . $empleado["title"] . '</td>';
-                                echo '<td>' . $empleado["dept_name"] . '</td>';
+                                echo '<tr class="empl'.$empleado["emp_no"].'">';
+                                echo '<td class="emp_no">' . $empleado["emp_no"] . '</td>';
+                                echo '<td class="birth_date">' . $empleado["birth_date"] . '</td>';
+                                echo '<td class="first_name">' . $empleado["first_name"] . '</td>';
+                                echo '<td class="last_name">' . $empleado["last_name"] . '</td>';
+                                echo '<td class="gender">' . $empleado["gender"] . '</td>';
+                                echo '<td class="hire_date">' . $empleado["hire_date"] . '</td>';
+                                echo '<td class="salary">' . $empleado["salary"] . '</td>';
+                                echo '<td class="title">' . $empleado["title"] . '</td>';
+                                echo '<td class="dept_name">' . $empleado["dept_name"] . '</td>';
                                 echo '<td><a href="' . base_url() . '/Empresa/deleteEmpleado/' . $empleado["emp_no"] . '"><button type="button" data-bind="click: $parent.remove" class="remove-news btn btn-xs btn-default" data-toggle="tooltip" data-placement="top" data-original-title="Delete">
                                                             <span class="glyphicon glyphicon-trash"></span>
                                                         </button></a>';
 
-                                echo '<a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '"><button type="button" class="btn btn-xs btn-default">
+                                echo '<a href="' . base_url() . '/Empresa/modificarEmpleado/' . $empleado["emp_no"] . '" class="modificar_empl"><button type="button" class="btn btn-xs btn-default">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 </button></a></td>';
                                 echo '</tr>';
