@@ -10,7 +10,8 @@
                 <div style="margin:7px">
                     <div class="col-xs-6">
                         <div class="btn-group">
-                            <a class="btn btn-default"><span>Nuevo</span></a>
+                             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Nuevo</button>
+
                         </div>
                     </div>
                     <div class="col-xs-6 pull-right form-group">
@@ -82,7 +83,7 @@
                 <div style="margin:7px">
                     <div class="col-xs-6">
                         <div class="btn-group">
-                            <a class="btn btn-default"><span>Nuevo</span></a>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">Nuevo</button>
                         </div>
                     </div>
                     <div class="col-xs-6 pull-right form-group">
@@ -123,6 +124,91 @@
 
     </div>
 </div>
+
+
+
+<div class="container">
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Agregar Nuevo Empleado</h4>
+        </div>
+        <div class="modal-body">
+            <form method="post">
+                                
+                <label>Número empleado</label>
+                <input type="number" name="emp_no" class="form-control">
+                <label>Nombre</label>
+                <input type="text" name="first_name" class="form-control">
+                <label>Apellido</label>
+                <input type="text" name="last_name" class="form-control">
+                <label>Sexo</label>
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="male">Hombre</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="female">Mujer</label>
+                </div>
+                <label>Fecha de nacimiento</label>
+                <input id="fecha" type="text" name="birth_date" class="form-control">
+                <label>Departamento</label>
+                <input type="text" name="dept_no" class="form-control">
+                <label>Salario</label>
+                <input type="text" name="salary" class="form-control">
+                <label>Título</label>
+                <input type="text" name="title" class="form-control">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="" class="btn btn-default">Agregar</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="container">
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Agregar Nuevo Empleado</h4>
+        </div>
+        <div class="modal-body">
+            <form method="post">
+                                
+                <label>Número departamento</label>
+                <input type="number" name="dept_no" class="form-control">
+                <label>Nombre</label>
+                <input type="text" name="dept_name" class="form-control">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="" class="btn btn-default">Agregar</a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
 
 </body>
 </html>
