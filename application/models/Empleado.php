@@ -11,6 +11,9 @@ class Empleado extends CI_Model{
         
         //Borra en cascada todos los registros del empleado
         $this->db->query("DELETE FROM employees WHERE emp_no = '$id_empleado'");
+        $this->db->query("DELETE FROM dept_emp WHERE emp_no = '$id_empleado'");
+        $this->db->query("DELETE FROM salaries WHERE emp_no = '$id_empleado'");
+        $this->db->query("DELETE FROM titles WHERE emp_no = '$id_empleado'");
     }
     
     function createEmpleado($emp_no, $birth_date, $first_name, $last_name, $gender, $department, $salary, $title){
