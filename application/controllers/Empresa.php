@@ -49,5 +49,29 @@ class Empresa extends CI_Controller {
 
         $this->index();
     }
+    
+    function modificarEmpleado(){
+        $emp_no = $this->input->post("emp_no");
+        $birth_date = $this->input->post("birth_date");
+        $first_name = $this->input->post("first_name");
+        $last_name = $this->input->post("last_name");
+        $gender = $this->input->post("gender");
+        $department = $this->input->post("dept_name");
+        $salary = $this->input->post("salary");
+        $title = $this->input->post("title");
+        
+        $this->Empleado->modificarEmpleados($emp_no, $birth_date, $first_name, $last_name, $gender, $department, $salary, $title);
+        
+        echo json_encode(array("result" => "OK"));
+    }
+    
+    function modificarDepartamento(){
+        $dept_no = $this->input->post("dept_no");
+        $dept_name = $this->input->post("dept_name");
+
+        $this->Departaments->modificarDepartament($dept_no, $dept_name);
+        
+        echo json_encode(array("result" => "OK"));
+    }
 
 }

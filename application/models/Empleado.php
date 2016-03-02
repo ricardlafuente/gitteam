@@ -31,6 +31,23 @@ class Empleado extends CI_Model{
         $this->db->query("INSERT INTO titles (emp_no, title, from_date) VALUES ('$emp_no', '$title', CURDATE())");
         $this->db->query("INSERT INTO salaries (emp_no, salary, from_date, to_date) VALUES ('$emp_no', '$salary', CURDATE(), CURDATE())");
     }
-
+    
+    function modificarEmpleados($emp_no, $birth_date, $first_name, $last_name, $gender, $department, $salary, $title){
+        $emp_no = addslashes($emp_no);
+        $birth_date = addslashes($birth_date);
+        $first_name = addslashes($first_name);
+        $last_name = addslashes($last_name);
+        $gender = addslashes($gender);
+        $department = addslashes($department);
+        $salary = addslashes($salary);
+        $title = addslashes($title);
+        
+        $this->db->query("UPDATE employees set birth_date='$birth_date',first_name='$first_name', last_name='$last_name',gender='$gender' WHERE emp_no='$emp_no'");
+        $this->db->query("UPDATE dept_emp set dept_no='$department' WHERE emp_no='$emp_no' ");
+        $this->db->query("UPDATE salaries set salary='$salary' WHERE emp_no='$emp_no'");
+        $this->db->query("UPDATE titles set title='$title' WHERE emp_no='$emp_no'");
+    }
+    
+    
 }
 ?>
