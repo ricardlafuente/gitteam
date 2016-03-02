@@ -35,8 +35,8 @@ class Empresa extends CI_Controller {
 
     function createDepartament() {
 
-        $dept_no = $this->inout->post("dept_no");
-        $dept_name = $this->inout->post("dept_name");
+        $dept_no = $this->input->post("dept_no");
+        $dept_name = $this->input->post("dept_name");
 
         $this->Departaments->createDepartament($dept_no, $dept_name);
 
