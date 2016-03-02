@@ -11,11 +11,10 @@
                     <div class="col-xs-6">
                         <div class="btn-group">
                             <a class="btn btn-default"><span>Nuevo</span></a>
-                            <a class="btn btn-default"><span>Eliminar</span></a>
                         </div>
                     </div>
                     <div class="col-xs-6 pull-right form-group">
-                        <input type="text" class="form-control" style="border-radius:0px" placeholder="Buscar">
+                        <h4>Empleados</h4>
                     </div>
                 </div>
                 <div class="panel-body" style="padding:0px">
@@ -64,29 +63,7 @@
                     </table>
                 </div>
                 <div class="panel-footer">
-                    <div class="col-xs-3"><div class="dataTables_info" id="example_info">Showing 51 - 60 of 100 total results</div></div>
-                    <div class="col-xs-6">
-                        <div class="dataTables_paginate paging_bootstrap">
-                            <ul class="pagination pagination-sm" style="margin:0 !important"><li class="prev disabled"><a href="#">← Previous</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li class="next disabled"><a href="#">Next → </a></li></ul>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
-                            10 <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" style="min-width: 0px ">
-                            <li><a href="#">5</a></li>
-                            <li class="active"><a href="#">10</a></li>
-                            <li><a href="#">15</a></li>
-                            <li><a href="#">15</a></li>
-                        </ul>
-                        <span>items por página </span>
-                    </div>
+  
                 </div>
             </div>
         </div>
@@ -106,11 +83,10 @@
                     <div class="col-xs-6">
                         <div class="btn-group">
                             <a class="btn btn-default"><span>Nuevo</span></a>
-                            <a class="btn btn-default"><span>Eliminar</span></a>
                         </div>
                     </div>
                     <div class="col-xs-6 pull-right form-group">
-                        <!--<input type="text" class="form-control" style="border-radius:0px" placeholder="Buscar">-->
+
                         <h4>Departamentos</h4>
                     </div>
                 </div>
@@ -139,29 +115,7 @@
                     </table>
                 </div>
                 <div class="panel-footer">
-<!--                    <div class="col-xs-3"><div class="dataTables_info" id="example_info">Showing 51 - 60 of 100 total results</div></div>
-                    <div class="col-xs-6">
-                        <div class="dataTables_paginate paging_bootstrap">
-                            <ul class="pagination pagination-sm" style="margin:0 !important"><li class="prev disabled"><a href="#">← Previous</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li class="next disabled"><a href="#">Next → </a></li></ul>
-                        </div>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
-                            10 <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu" style="min-width: 0px ">
-                            <li><a href="#">5</a></li>
-                            <li class="active"><a href="#">10</a></li>
-                            <li><a href="#">15</a></li>
-                            <li><a href="#">15</a></li>
-                        </ul>
-                        <span>items por página </span>
-                    </div>-->
+                  
                 </div>
             </div>
         </div>
