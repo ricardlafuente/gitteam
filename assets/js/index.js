@@ -43,7 +43,7 @@ $(function () {
                                         
                                         //Ajax
                                         $.ajax({
-                                            url: 'Empresa/modificarEmpleado',
+                                            url: 'http://localhost/Empresa/Empresa/modificarEmpleado',
                                             type: "POST",
                                             data: {
                                                 emp_no: $(this).parent().parent().find(".emp_no").html(),
